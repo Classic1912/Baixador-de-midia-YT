@@ -19,7 +19,7 @@ from PySide6.QtWidgets import (QAbstractItemView, QApplication, QComboBox, QLabe
     QLineEdit, QListView, QListWidget, QListWidgetItem,
     QMainWindow, QProgressBar, QPushButton, QSizePolicy,
     QStackedWidget, QWidget)
-import imagens
+import UI.imagens
 
 class Ui_Janela(object):
     def setupUi(self, Janela):
@@ -43,7 +43,7 @@ class Ui_Janela(object):
         self.label.setObjectName(u"label")
         self.label.setGeometry(QRect(260, 40, 300, 41))
         self.label.setStyleSheet(u"border-radius: 12px;\n"
-"background-color: rgb(255, 255, 255, 0);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
 "")
         self.label.setTextInteractionFlags(Qt.NoTextInteraction)
         self.lE_url = QLineEdit(self.centralwidget)
@@ -313,8 +313,8 @@ class Ui_Janela(object):
     # setupUi
 
     def retranslateUi(self, Janela):
-        Janela.setWindowTitle(QCoreApplication.translate("Janela", u"Direto do YouTube", None))
-        self.label.setText(QCoreApplication.translate("Janela", u"<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#ffaaff;\">Direto do YouTube</span></p></body></html>", None))
+        Janela.setWindowTitle(QCoreApplication.translate("Janela", u"BMYT", None))
+        self.label.setText(QCoreApplication.translate("Janela", u"<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:700; font-style:italic; color:#ffaaff;\">Baixador de m\u00eddia do yt</span></p></body></html>", None))
         self.lE_url.setPlaceholderText(QCoreApplication.translate("Janela", u"Ex: https://youtu.be/JWzgxmFDY9k", None))
 #if QT_CONFIG(tooltip)
         self.nao_alteravel.setToolTip("")
@@ -333,7 +333,7 @@ class Ui_Janela(object):
 #endif // QT_CONFIG(tooltip)
         self.pB_selecionar.setText("")
         self.pB_buscar.setText(QCoreApplication.translate("Janela", u"Baixar", None))
-        self.label_2.setText(QCoreApplication.translate("Janela", u"<html><head/><body><p><span style=\" color:#783cb4;\">Cr\u00e9ditos: </span><a href=\"https://github.com/Classic1912\"><span style=\" text-decoration: underline; color:#ffaaff;\">icons8</span></a></p></body></html>", None))
+        self.label_2.setText(QCoreApplication.translate("Janela", u"<html><head/><body><p><span style=\" color:#783cb4;\">Cr\u00e9ditos: </span><a href=\"https://icons8.com.br/\"><span style=\" text-decoration: underline; color:#ffaaff;\">icons8</span></a></p></body></html>", None))
         self.comboBox.setItemText(0, QCoreApplication.translate("Janela", u"MP3", None))
         self.comboBox.setItemText(1, QCoreApplication.translate("Janela", u"MP4", None))
 
